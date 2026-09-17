@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rubén — Servicios confiables para tu hogar en Lima | Técnicos a domicilio</title>
+<meta name="description" content="¿Necesitas ayuda? Llama a Rubén. Gasfitería, electricidad, carpintería, cerrajería, limpieza, enfermería a domicilio y más en Lima. Especialistas evaluados y coordinación rápida por WhatsApp.">
+<meta name="keywords" content="servicios para el hogar Lima, técnicos a domicilio, gasfitero a domicilio, electricista a domicilio, reparación de electrodomésticos, carpintero a domicilio, enfermería a domicilio, servicios de mantenimiento, especialistas confiables, servicios a domicilio en Lima">
+<meta name="theme-color" content="#12525E">
+<meta property="og:title" content="Rubén — Servicios confiables para tu hogar">
+<meta property="og:description" content="Cuéntale a Rubén qué necesitas y coordinamos la visita. Técnicos y especialistas confiables a domicilio en Lima.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#FBF7EF;
+  --surface:#FFFFFF;
+  --surface-2:#F4EFE4;
+  --ink:#143038;
+  --ink-soft:#51636A;
+  --primary:#12525E;
+  --primary-deep:#0C3B44;
+  --primary-ink:#EAF6F3;
+  --accent:#F07C1E;
+  --accent-deep:#D66A0E;
+  --accent-ink:#3A1E00;
+  --wa:#25D366;
+  --wa-deep:#1FAE53;
+  --line:#E7DECD;
+  --line-strong:#D8CDB6;
+  --good:#2E9E6B;
+  --shadow-sm:0 2px 8px rgba(20,48,56,.06);
+  --shadow:0 12px 30px -12px rgba(12,59,68,.22);
+  --shadow-lg:0 26px 60px -24px rgba(12,59,68,.34);
+  --r-sm:12px; --r:18px; --r-lg:26px; --r-pill:999px;
+  --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B282F;
+    --surface:#103741;
+    --surface-2:#0E323B;
+    --ink:#EAF3F1;
+    --ink-soft:#A9C1C3;
+    --primary:#2A7A88;
+    --primary-deep:#08222A;
+    --primary-ink:#EAF6F4;
+    --accent:#F89440;
+    --accent-deep:#E67E23;
+    --accent-ink:#2A1500;
+    --line:#1E4B55;
+    --line-strong:#2A5D68;
+    --shadow-sm:0 2px 8px rgba(0,0,0,.3);
+    --shadow:0 14px 34px -14px rgba(0,0,0,.55);
+    --shadow-lg:0 28px 64px -26px rgba(0,0,0,.65);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B282F; --surface:#103741; --surface-2:#0E323B;
+  --ink:#EAF3F1; --ink-soft:#A9C1C3; --primary:#2A7A88; --primary-deep:#08222A;
+  --primary-ink:#EAF6F4; --accent:#F89440; --accent-deep:#E67E23; --accent-ink:#2A1500;
+  --line:#1E4B55; --line-strong:#2A5D68;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.3); --shadow:0 14px 34px -14px rgba(0,0,0,.55); --shadow-lg:0 28px 64px -26px rgba(0,0,0,.65);
+}
+
+/* ============ BASE ============ */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation-duration:.001ms!important;transition-duration:.001ms!important} }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Nunito",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4,.brandfont{font-family:"Fredoka","Nunito",sans-serif; font-weight:600; line-height:1.12; letter-spacing:-.01em; color:var(--ink)}
+h2{font-size:clamp(1.65rem,3.6vw,2.5rem); margin:0 0 .5em}
+h3{font-size:1.2rem; margin:0 0 .35em}
+p{margin:0 0 1em}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 20px}
+section{padding:64px 0}
+.lead{color:var(--ink-soft); font-size:1.08rem; max-width:60ch}
+.center{text-align:center}
+.section-head{max-width:64ch; margin-bottom:38px}
+.section-head.center{margin-inline:auto}
+.eyebrow{display:inline-flex; align-items:center; gap:8px; color:var(--primary); font-weight:800; font-size:.95rem; margin-bottom:10px}
+.eyebrow svg{width:18px;height:18px}
+:focus-visible{outline:3px solid var(--accent); outline-offset:2px; border-radius:6px}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  font-family:"Nunito",sans-serif; font-weight:800; font-size:1rem;
+  padding:14px 22px; border-radius:var(--r-pill); border:2px solid transparent;
+  cursor:pointer; text-decoration:none; transition:transform .15s ease, box-shadow .2s ease, background .2s ease; white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-accent{background:var(--accent); color:var(--accent-ink); box-shadow:var(--shadow)}
+.btn-accent:hover{background:var(--accent-deep)}
+.btn-primary{background:var(--primary); color:var(--primary-ink); box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--primary-deep)}
+.btn-wa{background:var(--wa); color:#08351a}
+.btn-wa:hover{background:var(--wa-deep); color:#fff}
+.btn-ghost{background:transparent; color:var(--ink); border-color:var(--line-strong)}
+.btn-ghost:hover{border-color:var(--primary); color:var(--primary)}
+.btn-block{width:100%}
+.btn-lg{padding:17px 28px; font-size:1.08rem}
+
+/* ============ HEADER ============ */
+header.site{
+  position:sticky; top:0; z-index:60; background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line);
+}
+.nav{display:flex; align-items:center; gap:18px; height:72px}
+.logo{display:flex; align-items:center; gap:10px; text-decoration:none; margin-right:auto}
+.logo .mark{width:42px;height:42px;flex:none}
+.logo .name{font-family:"Fredoka",sans-serif; font-weight:700; font-size:1.5rem; color:var(--primary); line-height:1}
+.logo .name small{display:block; font-family:"Nunito"; font-weight:700; font-size:.62rem; letter-spacing:.02em; color:var(--ink-soft)}
+.menu{display:flex; align-items:center; gap:4px}
+.menu a{padding:9px 13px; border-radius:var(--r-pill); text-decoration:none; font-weight:700; font-size:.96rem; color:var(--ink); transition:background .15s}
+.menu a:hover{background:var(--surface-2)}
+.nav-cta{display:flex; align-items:center; gap:10px}
+.icon-wa{width:44px;height:44px;border-radius:50%; background:var(--wa); display:grid; place-items:center; color:#08351a; text-decoration:none; box-shadow:var(--shadow-sm)}
+.icon-wa svg{width:24px;height:24px}
+.burger{display:none; width:46px;height:46px; border:2px solid var(--line-strong); background:var(--surface); border-radius:14px; cursor:pointer; align-items:center; justify-content:center}
+.burger svg{width:24px;height:24px; color:var(--ink)}
+
+/* ============ HERO ============ */
+.hero{position:relative; padding:52px 0 70px; overflow:hidden}
+.hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:44px; align-items:center}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.5rem); margin:0 0 .35em}
+.hero .sub{font-size:1.15rem; color:var(--ink-soft); max-width:46ch; margin-bottom:26px}
+.finder{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:16px; box-shadow:var(--shadow); margin-bottom:18px}
+.finder label{display:block; font-weight:800; font-size:.92rem; margin-bottom:8px; color:var(--ink)}
+.finder-row{display:flex; gap:10px}
+.select-wrap{position:relative; flex:1}
+.select-wrap svg{position:absolute; right:14px; top:50%; transform:translateY(-50%); width:20px;height:20px; pointer-events:none; color:var(--primary)}
+select,input,textarea{
+  font-family:"Nunito",sans-serif; font-size:1rem; color:var(--ink);
+  width:100%; padding:14px 16px; border:2px solid var(--line-strong); border-radius:14px;
+  background:var(--surface); appearance:none; transition:border-color .15s;
+}
+select{padding-right:42px; cursor:pointer}
+input:focus,select:focus,textarea:focus{border-color:var(--primary); outline:none}
+.hero-ctas{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:26px}
+.trust-chips{display:flex; flex-wrap:wrap; gap:10px 20px; padding-top:6px}
+.trust-chips li{display:flex; align-items:center; gap:8px; font-weight:700; font-size:.95rem; list-style:none}
+.trust-chips svg{width:20px;height:20px; color:var(--good); flex:none}
+.trust-chips ul{display:contents}
+ul.trust-chips{padding:0;margin:0}
+/* hero art */
+.hero-art{position:relative; display:grid; place-items:center}
+.hero-art .blob{position:absolute; inset:0; margin:auto; width:96%; aspect-ratio:1; background:radial-gradient(circle at 50% 40%, color-mix(in srgb,var(--primary) 22%, transparent), transparent 62%); z-index:0}
+.hero-art .char{position:relative; z-index:1; width:min(420px,86%); filter:drop-shadow(0 26px 40px rgba(12,59,68,.28))}
+.hero-badge{position:absolute; z-index:2; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:10px 14px; box-shadow:var(--shadow); display:flex; align-items:center; gap:10px; font-weight:800; font-size:.9rem}
+.hero-badge svg{width:26px;height:26px}
+.hero-badge.b1{top:6%; left:-2%}
+.hero-badge.b2{bottom:10%; right:-3%}
+.hero-badge .k{color:var(--primary); font-size:1.1rem; line-height:1}
+.hero-badge .k small{display:block; color:var(--ink-soft); font-size:.72rem; font-weight:700}
+
+/* ============ CATEGORIES ============ */
+.cat-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+.cat{
+  display:flex; flex-direction:column; align-items:flex-start; gap:12px;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:20px;
+  cursor:pointer; text-align:left; transition:transform .15s, box-shadow .2s, border-color .2s; box-shadow:var(--shadow-sm);
+  font:inherit; color:inherit;
+}
+.cat:hover{transform:translateY(-4px); box-shadow:var(--shadow); border-color:var(--primary)}
+.cat .ico{width:54px;height:54px; border-radius:16px; display:grid; place-items:center; background:color-mix(in srgb,var(--primary) 12%, var(--surface)); color:var(--primary)}
+.cat .ico svg{width:30px;height:30px}
+.cat b{font-family:"Fredoka"; font-weight:600; font-size:1.06rem}
+.cat span{font-size:.9rem; color:var(--ink-soft)}
+.cat .go{margin-top:auto; color:var(--accent-deep); font-weight:800; font-size:.9rem; display:inline-flex; align-items:center; gap:6px}
+.cat.health .ico{background:color-mix(in srgb,var(--accent) 16%, var(--surface)); color:var(--accent-deep)}
+.cat-more{margin-top:26px; display:flex; justify-content:center}
+
+/* all services panel */
+#allServices{display:none; margin-top:26px}
+#allServices.open{display:block; animation:pop .3s ease}
+@keyframes pop{from{opacity:0; transform:translateY(8px)}to{opacity:1;transform:none}}
+.serv-list{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:10px}
+.serv-item{display:flex; align-items:center; gap:12px; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:12px 14px; cursor:pointer; font:inherit; color:inherit; text-align:left; transition:border-color .15s, background .15s}
+.serv-item:hover{border-color:var(--primary); background:var(--surface-2)}
+.serv-item .d{width:36px;height:36px;border-radius:10px;background:color-mix(in srgb,var(--primary) 10%, var(--surface)); color:var(--primary); display:grid;place-items:center;flex:none}
+.serv-item .d svg{width:20px;height:20px}
+.serv-item.health .d{background:color-mix(in srgb,var(--accent) 14%, var(--surface)); color:var(--accent-deep)}
+.serv-item b{font-weight:700; font-size:.95rem}
+.health-note{margin-top:18px; background:color-mix(in srgb,var(--accent) 9%, var(--surface)); border:1px solid color-mix(in srgb,var(--accent) 34%, var(--line)); border-radius:var(--r); padding:16px 18px; display:flex; gap:12px}
+.health-note svg{width:26px;height:26px;color:var(--accent-deep);flex:none}
+.health-note p{margin:0; font-size:.95rem; color:var(--ink)}
+
+/* ============ HOW ============ */
+.how{background:var(--primary); color:var(--primary-ink)}
+.how h2,.how h3{color:var(--primary-ink)}
+.how .eyebrow{color:color-mix(in srgb,var(--accent) 70%, white)}
+.how-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:14px}
+.step{background:color-mix(in srgb,white 8%, var(--primary)); border:1px solid color-mix(in srgb,white 16%, transparent); border-radius:var(--r); padding:24px 22px; position:relative}
+.step .num{font-family:"Fredoka"; font-weight:700; font-size:2.4rem; color:var(--accent); line-height:1; margin-bottom:12px; display:block}
+.step p{color:color-mix(in srgb,var(--primary-ink) 82%, transparent); margin:0}
+.how-cta{margin-top:34px; display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:center}
+.how-figure{display:flex; align-items:center; gap:16px; justify-content:center; margin-bottom:8px}
+
+/* ============ FORM (request) ============ */
+.request{background:var(--surface-2)}
+.form-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); box-shadow:var(--shadow); padding:30px; max-width:860px; margin:0 auto}
+.form-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+.field{display:flex; flex-direction:column; gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-weight:800; font-size:.92rem}
+.field label .req{color:var(--accent-deep)}
+.field .hint{font-size:.82rem; color:var(--ink-soft)}
+textarea{resize:vertical; min-height:96px}
+.urgency{display:flex; gap:10px; flex-wrap:wrap}
+.urgency label{flex:1; min-width:120px; border:2px solid var(--line-strong); border-radius:14px; padding:12px; text-align:center; cursor:pointer; font-weight:700; font-size:.92rem; transition:.15s; background:var(--surface)}
+.urgency input{position:absolute; opacity:0; width:0;height:0}
+.urgency label:has(input:checked){border-color:var(--accent); background:color-mix(in srgb,var(--accent) 12%, var(--surface)); color:var(--accent-deep)}
+.file-drop{border:2px dashed var(--line-strong); border-radius:14px; padding:16px; text-align:center; cursor:pointer; transition:.15s; background:var(--surface)}
+.file-drop:hover{border-color:var(--primary); background:var(--surface-2)}
+.file-drop svg{width:26px;height:26px;color:var(--primary)}
+.file-drop small{display:block;color:var(--ink-soft); font-size:.82rem; margin-top:4px}
+.file-names{font-size:.85rem; color:var(--primary); font-weight:700; margin-top:6px}
+.check{display:flex; gap:10px; align-items:flex-start; font-size:.9rem}
+.check input{width:20px;height:20px; flex:none; margin-top:2px; accent-color:var(--primary)}
+.check a{color:var(--primary); font-weight:700}
+.form-err{display:none; color:#b3261e; font-weight:700; font-size:.9rem; margin-top:4px}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#b3261e}
+.field.invalid .form-err{display:block}
+.form-note{font-size:.85rem; color:var(--ink-soft); text-align:center; margin-top:14px}
+.contact-pref{display:flex; gap:10px}
+.contact-pref label{flex:1; border:2px solid var(--line-strong); border-radius:14px; padding:11px; text-align:center; cursor:pointer; font-weight:700; font-size:.9rem; background:var(--surface)}
+.contact-pref input{position:absolute;opacity:0;width:0;height:0}
+.contact-pref label:has(input:checked){border-color:var(--primary); background:color-mix(in srgb,var(--primary) 10%, var(--surface)); color:var(--primary)}
+
+/* ============ TRUST ============ */
+.trust-grid{display:grid; grid-template-columns:1fr 1fr; gap:34px; align-items:center}
+.trust-list{display:grid; gap:14px}
+.trust-list li{display:flex; gap:14px; align-items:flex-start; list-style:none; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:16px 18px; box-shadow:var(--shadow-sm)}
+.trust-list .tk{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--good) 15%, var(--surface));color:var(--good);display:grid;place-items:center;flex:none}
+.trust-list .tk svg{width:24px;height:24px}
+.trust-list b{display:block; font-family:"Fredoka"; font-weight:600; font-size:1.02rem}
+.trust-list span{font-size:.92rem; color:var(--ink-soft)}
+ul.trust-list{padding:0;margin:0}
+.trust-quote{background:var(--primary); color:var(--primary-ink); border-radius:var(--r-lg); padding:30px; box-shadow:var(--shadow)}
+.trust-quote .ruben-round{width:78px;height:78px;margin-bottom:16px}
+.trust-quote p{font-family:"Fredoka"; font-weight:500; font-size:1.35rem; line-height:1.35; margin:0 0 14px; color:var(--primary-ink)}
+.trust-quote .sig{font-weight:800; color:color-mix(in srgb,var(--accent) 70%, white)}
+.trust-disc{font-size:.82rem; color:color-mix(in srgb,var(--primary-ink) 74%, transparent); margin-top:14px}
+
+/* ============ TESTIMONIALS ============ */
+.demo-flag{display:inline-flex; align-items:center; gap:8px; background:color-mix(in srgb,var(--accent) 14%, var(--surface)); color:var(--accent-deep); border:1px solid color-mix(in srgb,var(--accent) 34%, var(--line)); font-weight:800; font-size:.82rem; padding:7px 14px; border-radius:var(--r-pill); margin-bottom:22px}
+.demo-flag svg{width:16px;height:16px}
+.tst-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.tst{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:24px; box-shadow:var(--shadow-sm); position:relative}
+.tst .stars{color:var(--accent); letter-spacing:2px; margin-bottom:10px; font-size:1.05rem}
+.tst p{font-size:1.02rem; margin:0 0 16px}
+.tst .who{display:flex; align-items:center; gap:12px}
+.tst .av{width:44px;height:44px;border-radius:50%; background:color-mix(in srgb,var(--primary) 16%, var(--surface)); color:var(--primary); display:grid; place-items:center; font-family:"Fredoka"; font-weight:700; flex:none}
+.tst .who b{display:block; font-size:.96rem}
+.tst .who span{font-size:.84rem; color:var(--ink-soft)}
+.tst .demo-tag{position:absolute; top:14px; right:14px; font-size:.68rem; font-weight:800; color:var(--ink-soft); background:var(--surface-2); padding:3px 8px; border-radius:8px}
+
+/* ============ URGENCY ============ */
+.urg{background:linear-gradient(135deg,var(--accent),var(--accent-deep)); color:#fff}
+.urg h2{color:#fff}
+.urg-card{max-width:820px; margin:0 auto; text-align:center}
+.urg-card p{color:rgba(255,255,255,.94)}
+.urg .btn-light{background:#fff; color:var(--accent-deep)}
+.urg .btn-light:hover{background:#fff5ea}
+.urg-note{margin-top:22px; background:rgba(0,0,0,.16); border-radius:var(--r); padding:16px 18px; font-size:.92rem; color:#fff; display:flex; gap:12px; text-align:left; max-width:820px; margin-inline:auto}
+.urg-note svg{width:26px;height:26px;flex:none}
+
+/* ============ WORK WITH US ============ */
+.work-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:40px; align-items:start}
+.work-intro .ruben-round{width:92px;height:92px;margin-bottom:14px}
+.work-perks{display:grid; gap:12px; margin-top:20px}
+.work-perks li{display:flex;gap:10px;align-items:center;list-style:none;font-weight:700;font-size:.96rem}
+.work-perks svg{width:20px;height:20px;color:var(--good);flex:none}
+ul.work-perks{padding:0;margin:0}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:820px; margin:0 auto; display:grid; gap:10px}
+.faq{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden}
+.faq summary{list-style:none; cursor:pointer; padding:18px 22px; display:flex; align-items:center; justify-content:space-between; gap:14px; font-family:"Fredoka"; font-weight:500; font-size:1.06rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .plus{width:28px;height:28px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;flex:none;transition:.2s;color:var(--primary)}
+.faq[open] summary .plus{transform:rotate(45deg); background:var(--primary); color:#fff}
+.faq .ans{padding:0 22px 20px; color:var(--ink-soft)}
+.faq .ans p{margin:0}
+
+/* ============ FOOTER ============ */
+footer.site{background:var(--primary-deep); color:var(--primary-ink); padding:56px 0 26px}
+footer.site a{color:color-mix(in srgb,var(--primary-ink) 84%, transparent); text-decoration:none}
+footer.site a:hover{color:#fff; text-decoration:underline}
+.foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1.1fr; gap:34px; margin-bottom:34px}
+.foot-brand .logo .name{color:#fff}
+.foot-brand p{color:color-mix(in srgb,var(--primary-ink) 78%, transparent); font-size:.95rem; margin-top:12px; max-width:34ch}
+.foot-col h4{color:#fff; font-size:1rem; margin-bottom:14px}
+.foot-col ul{list-style:none; padding:0; margin:0; display:grid; gap:9px; font-size:.95rem}
+.foot-phone{display:flex; align-items:center; gap:10px; font-weight:800; color:#fff; margin-bottom:10px}
+.foot-phone svg{width:20px;height:20px; color:var(--wa)}
+.foot-social{display:flex; gap:10px; margin-top:14px}
+.foot-social a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.foot-social svg{width:20px;height:20px;color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.14); padding-top:22px; display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center; font-size:.85rem; color:color-mix(in srgb,var(--primary-ink) 70%, transparent)}
+.foot-disc{font-size:.82rem; color:color-mix(in srgb,var(--primary-ink) 66%, transparent); margin-top:16px; max-width:70ch}
+
+/* ============ FLOATING ============ */
+.float{position:fixed; z-index:70; right:18px; bottom:18px; display:flex; flex-direction:column; gap:12px; align-items:flex-end}
+.fab-wa{width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -6px rgba(37,211,102,.6); text-decoration:none; animation:pulse 2.4s infinite}
+.fab-wa svg{width:32px;height:32px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.fab-service{display:none}
+
+/* mobile menu panel */
+.mobile-panel{position:fixed; inset:0; z-index:80; background:color-mix(in srgb,var(--primary-deep) 55%, transparent); backdrop-filter:blur(4px); opacity:0; pointer-events:none; transition:opacity .2s}
+.mobile-panel.open{opacity:1; pointer-events:auto}
+.mobile-panel .sheet{position:absolute; top:0; right:0; height:100%; width:min(320px,86%); background:var(--bg); box-shadow:var(--shadow-lg); padding:22px; transform:translateX(100%); transition:transform .25s ease; display:flex; flex-direction:column; gap:6px}
+.mobile-panel.open .sheet{transform:none}
+.mobile-panel .sheet a{padding:14px 12px; border-radius:14px; font-weight:800; text-decoration:none; color:var(--ink)}
+.mobile-panel .sheet a:hover{background:var(--surface-2)}
+.mobile-panel .sheet .close{align-self:flex-end; width:44px;height:44px;border:none;background:var(--surface-2);border-radius:12px;cursor:pointer;color:var(--ink); font-size:1.4rem; margin-bottom:8px}
+.mobile-panel .sheet .btn{margin-top:12px}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1024px){
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .how-grid{grid-template-columns:repeat(2,1fr)}
+  .serv-list{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  section{padding:52px 0}
+  .menu,.nav-cta .btn{display:none}
+  .burger{display:flex}
+  .hero-grid{grid-template-columns:1fr; gap:24px}
+  .hero-art{order:-1; max-width:360px; margin:0 auto}
+  .hero-badge.b1{left:2%} .hero-badge.b2{right:2%}
+  .trust-grid{grid-template-columns:1fr; gap:24px}
+  .work-grid{grid-template-columns:1fr; gap:26px}
+  .tst-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr; gap:26px}
+  .fab-service{display:inline-flex}
+  .float{bottom:16px}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .cat-grid{grid-template-columns:1fr 1fr; gap:12px}
+  .cat{padding:16px}
+  .serv-list{grid-template-columns:1fr}
+  .how-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .form-card{padding:22px 18px}
+  .finder-row{flex-direction:column}
+  .hero-ctas .btn{flex:1}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site">
+  <div class="wrap nav">
+    <a href="#inicio" class="logo" aria-label="Rubén — inicio">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="14" fill="#12525E"/><path d="M24 10c-6.2 0-11 4.6-11 11 0 4.6 2.7 7.9 6 10v3.2c0 1 .8 1.8 1.8 1.8h6.4c1 0 1.8-.8 1.8-1.8V31c3.3-2.1 6-5.4 6-10 0-6.4-4.8-11-11-11Z" fill="#F07C1E"/><circle cx="20" cy="21" r="1.8" fill="#12525E"/><circle cx="28" cy="21" r="1.8" fill="#12525E"/><path d="M20 26c1.2 1.4 6.8 1.4 8 0" stroke="#12525E" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+      <span class="name">Rubén<small>Servicios para el hogar</small></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#confianza">Confianza y seguridad</a>
+      <a href="#trabaja">Trabaja con nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-accent" href="#solicitar">Pedir un servicio</a>
+      <a class="icon-wa" id="waHeader" href="#" target="_blank" rel="noopener" aria-label="Escribir a Rubén por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.36-.5.05-1.14.24-3.7-.78-3.11-1.23-5.08-4.4-5.23-4.6-.15-.2-1.25-1.66-1.25-3.17s.79-2.25 1.07-2.56c.28-.31.61-.39.82-.39.2 0 .41 0 .59.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.45.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.39-.24.65-.15.27.1 1.71.81 2 .95.29.15.49.22.56.34.07.12.07.71-.17 1.39Z"/></svg>
+      </a>
+    </div>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <div class="sheet">
+    <button class="close" id="mClose" aria-label="Cerrar menú">×</button>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#confianza">Confianza y seguridad</a>
+    <a href="#trabaja">Trabaja con nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn btn-accent" href="#solicitar">Pedir un servicio</a>
+  </div>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+        Servicios a domicilio en Lima
+      </span>
+      <h1>¿Qué necesitas resolver hoy?</h1>
+      <p class="sub">Encuentra técnicos y especialistas confiables para tu hogar. Cuéntale a Rubén qué necesitas y coordinaremos la visita.</p>
+
+      <div class="finder">
+        <label for="heroService">¿Qué servicio estás buscando?</label>
+        <div class="finder-row">
+          <div class="select-wrap">
+            <select id="heroService" aria-label="Selecciona un servicio">
+              <option value="">Elige un servicio…</option>
+            </select>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <button class="btn btn-accent" id="heroFindBtn" type="button">Solicitar</button>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a class="btn btn-wa btn-lg" id="waHero" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.36-.5.05-1.14.24-3.7-.78-3.11-1.23-5.08-4.4-5.23-4.6-.15-.2-1.25-1.66-1.25-3.17s.79-2.25 1.07-2.56c.28-.31.61-.39.82-.39.2 0 .41 0 .59.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.2.07.15.12.32.02.52-.4.8-.87 1.05-.44 1.12.29.15 1.71.81 2 .95.29.15.49.22.56.34.07.12.07.71-.17 1.39Z"/></svg>
+          Solicitar por WhatsApp
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#servicios">Ver todos los servicios</a>
+      </div>
+
+      <ul class="trust-chips">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Especialistas evaluados</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Atención rápida</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Precios informados antes de empezar</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Seguimiento del servicio</li>
+      </ul>
+    </div>
+
+    <div class="hero-art">
+      <div class="blob" aria-hidden="true"></div>
+      <div class="hero-badge b1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--good)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <span class="k">Verificados<small>Identidad y experiencia</small></span>
+      </div>
+      <div class="hero-badge b2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span class="k">Coordinas<small>en minutos por WhatsApp</small></span>
+      </div>
+      <!-- RUBÉN CHARACTER -->
+      <svg class="char" viewBox="0 0 360 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rubén, el coordinador amigable de la marca">
+        <ellipse cx="180" cy="372" rx="120" ry="18" fill="rgba(12,59,68,.12)"/>
+        <!-- body / polo -->
+        <path d="M96 400c0-46 6-92 20-116 10-17 27-28 64-28s54 11 64 28c14 24 20 70 20 116H96Z" fill="#12525E"/>
+        <path d="M150 262c0 18 60 18 60 0v-14h-60v14Z" fill="#e8b48f"/>
+        <!-- collar -->
+        <path d="M150 250l30 26 30-26-14-8-16 14-16-14-14 8Z" fill="#0C3B44"/>
+        <!-- logo on polo -->
+        <circle cx="140" cy="320" r="15" fill="#F07C1E"/>
+        <text x="140" y="326" font-family="Fredoka, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">R</text>
+        <!-- left arm holding toolbox -->
+        <path d="M96 300c-14 6-24 22-24 44 0 10 3 20 8 28l22-8c-3-7-4-14-4-22 0-14 4-26 10-34l-12-8Z" fill="#12525E"/>
+        <!-- toolbox -->
+        <rect x="52" y="352" width="70" height="40" rx="6" fill="#F07C1E"/>
+        <rect x="52" y="352" width="70" height="12" rx="6" fill="#D66A0E"/>
+        <rect x="80" y="342" width="14" height="12" rx="3" fill="#0C3B44"/>
+        <rect x="72" y="340" width="30" height="6" rx="3" fill="#0C3B44"/>
+        <!-- right arm thumbs up -->
+        <path d="M264 300c14 6 24 22 24 44 0 8-2 16-5 23l-24-9c3-8 5-16 5-24 0-12-3-22-8-30l8-4Z" fill="#12525E"/>
+        <g transform="translate(276 322) rotate(12)">
+          <circle cx="0" cy="0" r="15" fill="#e8b48f"/>
+          <path d="M-4 -2c0-6 2-12 5-12s3 6 3 10l6-1c4 0 6 2 6 6s-2 12-8 12h-10c-3 0-5-2-5-5v-8c0-1 2-2 3-2Z" fill="#f0c19c"/>
+        </g>
+        <!-- neck -->
+        <rect x="164" y="176" width="32" height="40" rx="14" fill="#e8b48f"/>
+        <!-- head -->
+        <circle cx="180" cy="150" r="60" fill="#f0c19c"/>
+        <!-- ears -->
+        <circle cx="122" cy="152" r="10" fill="#e8b48f"/>
+        <circle cx="238" cy="152" r="10" fill="#e8b48f"/>
+        <!-- hair (greying) -->
+        <path d="M122 140c-4-40 24-64 58-64s62 24 58 64c-2-8-8-16-16-20 2 8 0 16-4 22-2-14-10-24-20-28 2 8-2 16-8 20-8-16-24-22-40-16-10 4-18 12-22 22-4-6-6-14-4-22-2 2-4 6-2 20Z" fill="#6b7b82"/>
+        <path d="M124 146c-2-10 0-18 4-24 0 8 2 14 6 18l-10 6Z" fill="#5a696f"/>
+        <!-- eyebrows -->
+        <path d="M150 132c6-4 16-4 22 0" stroke="#5a696f" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path d="M188 132c6-4 16-4 22 0" stroke="#5a696f" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <!-- eyes -->
+        <circle cx="160" cy="146" r="5.5" fill="#143038"/>
+        <circle cx="200" cy="146" r="5.5" fill="#143038"/>
+        <circle cx="162" cy="144" r="1.8" fill="#fff"/>
+        <circle cx="202" cy="144" r="1.8" fill="#fff"/>
+        <!-- nose -->
+        <path d="M180 150c-3 8-6 12-2 15 2 2 6 2 8 0" stroke="#d99e73" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+        <!-- smile -->
+        <path d="M158 172c10 14 34 14 44 0" stroke="#b5623b" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+        <!-- moustache -->
+        <path d="M162 168c6 4 12 4 18 2 6 2 12 2 18-2-4 6-12 8-18 8s-14-2-18-8Z" fill="#6b7b82"/>
+        <!-- cheeks -->
+        <circle cx="146" cy="164" r="7" fill="#ec9b6f" opacity=".45"/>
+        <circle cx="214" cy="164" r="7" fill="#ec9b6f" opacity=".45"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CATEGORIES ========== -->
+<section id="servicios">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        Categorías más solicitadas
+      </span>
+      <h2>Elige el servicio que necesitas</h2>
+      <p class="lead">Toca una categoría para empezar tu solicitud. Rubén conoce a alguien que puede ayudarte.</p>
+    </div>
+
+    <div class="cat-grid" id="catGrid"><!-- filled by JS --></div>
+
+    <div class="cat-more">
+      <button class="btn btn-primary btn-lg" id="toggleAll" type="button" aria-expanded="false" aria-controls="allServices">Ver todos los servicios</button>
+    </div>
+
+    <div id="allServices" aria-hidden="true">
+      <h3 style="margin-top:10px">Todos los servicios disponibles</h3>
+      <div class="serv-list" id="servList"><!-- filled by JS --></div>
+      <div class="health-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12l2 2 4-4"/></svg>
+        <p>Los procedimientos de enfermería son realizados únicamente por personal acreditado. La aplicación de medicamentos requiere indicación médica cuando corresponda. Rubén no sustituye un servicio de emergencia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="how" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="how-figure">
+        <svg class="ruben-round" width="64" height="64" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="50" fill="#0C3B44"/><circle cx="50" cy="46" r="26" fill="#f0c19c"/><path d="M26 42c-2-20 12-30 24-30s26 10 24 30c-2-6-6-11-11-13 1 5-1 9-4 12-4-8-12-11-20-8-5 2-9 6-11 11-2-3-3-7-2-12-1 1-3 4-2 10Z" fill="#6b7b82"/><circle cx="42" cy="45" r="3" fill="#143038"/><circle cx="58" cy="45" r="3" fill="#143038"/><path d="M40 56c6 7 14 7 20 0" stroke="#b5623b" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M42 53c3 2 6 2 8 1 2 1 5 1 8-1-2 3-5 4-8 4s-6-1-8-4Z" fill="#6b7b82"/><path d="M24 100c0-20 12-30 26-30s26 10 26 30H24Z" fill="#12525E"/></svg>
+      </div>
+      <span class="eyebrow">Así de fácil</span>
+      <h2>Cómo funciona</h2>
+      <p class="lead" style="margin-inline:auto; color:color-mix(in srgb,var(--primary-ink) 82%, transparent)">Coordina el servicio de manera rápida y segura, en cuatro pasos sencillos.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="step"><span class="num">1</span><h3>Elige el servicio</h3><p>Selecciona lo que necesitas resolver.</p></div>
+      <div class="step"><span class="num">2</span><h3>Cuéntanos el problema</h3><p>Describe el trabajo, comparte fotos y dinos dónde te encuentras.</p></div>
+      <div class="step"><span class="num">3</span><h3>Recibe la confirmación</h3><p>Te informaremos el especialista asignado, el horario y el precio estimado.</p></div>
+      <div class="step"><span class="num">4</span><h3>Recibe y califica</h3><p>El especialista irá a tu domicilio y podrás evaluar la atención recibida.</p></div>
+    </div>
+
+    <div class="how-cta">
+      <a class="btn btn-accent btn-lg" href="#solicitar">Pedir un servicio</a>
+      <a class="btn btn-wa btn-lg" id="waHow" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>
+        Escribir a Rubén
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REQUEST FORM ========== -->
+<section class="request" id="solicitar">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Solicita tu servicio</span>
+      <h2>Cuéntale a Rubén qué necesitas</h2>
+      <p class="lead" style="margin-inline:auto">Completa el formulario y lo enviamos por WhatsApp, ya ordenado, para coordinar más rápido. Tu casa necesita una solución, no más complicaciones.</p>
+    </div>
+
+    <form class="form-card" id="requestForm" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="f_name">Nombre <span class="req">*</span></label>
+          <input type="text" id="f_name" name="name" autocomplete="name" placeholder="Tu nombre">
+          <span class="form-err">Ingresa tu nombre.</span>
+        </div>
+        <div class="field">
+          <label for="f_phone">Número de celular <span class="req">*</span></label>
+          <input type="tel" id="f_phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="999 999 999">
+          <span class="form-err">Ingresa un celular válido (9 dígitos).</span>
+        </div>
+        <div class="field">
+          <label for="f_district">Distrito o ubicación <span class="req">*</span></label>
+          <input type="text" id="f_district" name="district" placeholder="Ej. Miraflores, San Isidro, Surco…">
+          <span class="form-err">Indícanos tu distrito.</span>
+        </div>
+        <div class="field">
+          <label for="f_address">Dirección o referencia</label>
+          <input type="text" id="f_address" name="address" placeholder="Calle, número, referencia">
+        </div>
+        <div class="field">
+          <label for="f_service">Servicio requerido <span class="req">*</span></label>
+          <div class="select-wrap">
+            <select id="f_service" name="service"><option value="">Elige un servicio…</option></select>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <span class="form-err">Selecciona el servicio que necesitas.</span>
+        </div>
+        <div class="field">
+          <label for="f_date">Fecha preferida</label>
+          <input type="date" id="f_date" name="date">
+        </div>
+        <div class="field full">
+          <label for="f_desc">Descripción del problema <span class="req">*</span></label>
+          <textarea id="f_desc" name="desc" placeholder="Cuéntanos qué ocurre y qué esperas resolver."></textarea>
+          <span class="form-err">Describe brevemente el trabajo.</span>
+        </div>
+        <div class="field">
+          <label for="f_slot">Franja horaria</label>
+          <div class="select-wrap">
+            <select id="f_slot" name="slot">
+              <option value="">Sin preferencia</option>
+              <option>Mañana (8:00 – 12:00)</option>
+              <option>Tarde (12:00 – 17:00)</option>
+              <option>Noche (17:00 – 20:00)</option>
+            </select>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="field">
+          <label>Medio de contacto preferido</label>
+          <div class="contact-pref">
+            <label><input type="radio" name="contact" value="WhatsApp" checked>WhatsApp</label>
+            <label><input type="radio" name="contact" value="Llamada">Llamada</label>
+          </div>
+        </div>
+        <div class="field full">
+          <label>Nivel de urgencia</label>
+          <div class="urgency">
+            <label><input type="radio" name="urgency" value="Hoy">Hoy</label>
+            <label><input type="radio" name="urgency" value="Dentro de 24 horas" checked>Dentro de 24 h</label>
+            <label><input type="radio" name="urgency" value="Programado">Programado</label>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="f_files">Fotografías del problema</label>
+          <label class="file-drop" for="f_files">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+            <div>Toca para elegir fotos</div>
+            <small>Las adjuntarás directamente en el chat de WhatsApp al enviar.</small>
+          </label>
+          <input type="file" id="f_files" name="files" accept="image/*" multiple hidden>
+          <div class="file-names" id="fileNames"></div>
+        </div>
+        <div class="field full">
+          <label class="check">
+            <input type="checkbox" id="f_terms" name="terms">
+            <span>Acepto los <a href="#terminos">términos y condiciones</a> y el <a href="#privacidad">tratamiento de mis datos personales</a> para coordinar el servicio. <span class="req">*</span></span>
+          </label>
+          <span class="form-err">Debes aceptar los términos para continuar.</span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-wa btn-lg btn-block" style="margin-top:8px">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>
+        Enviar solicitud por WhatsApp
+      </button>
+      <p class="form-note">Al enviar, se abrirá WhatsApp con tu solicitud ya redactada. Ningún dato se guarda en este sitio.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ========== TRUST ========== -->
+<section id="confianza">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+        Confianza y seguridad
+      </span>
+      <h2>Dejar entrar a alguien a tu hogar requiere confianza</h2>
+      <p class="lead">Por eso evaluamos a nuestros especialistas y hacemos seguimiento a cada servicio. Coordina el servicio de manera rápida y segura.</p>
+    </div>
+
+    <div class="trust-grid">
+      <ul class="trust-list">
+        <li><span class="tk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 5 5 1-4 4 1 5-5-2.5L7 17l1-5-4-4 5-1 3-5Z"/></svg></span><div><b>Identidad verificada</b><span>Confirmamos la identidad de cada especialista de la red.</span></div></li>
+        <li><span class="tk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><div><b>Experiencia y referencias</b><span>Validamos trayectoria y referencias antes de sumar a un especialista.</span></div></li>
+        <li><span class="tk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span><div><b>Profesionales acreditados</b><span>Servicios de salud atendidos por personal acreditado cuando corresponde.</span></div></li>
+        <li><span class="tk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><b>Precio confirmado antes de iniciar</b><span>Conoces el precio estimado antes de que empiece el trabajo.</span></div></li>
+        <li><span class="tk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Seguimiento y soporte</b><span>Acompañamos el servicio de principio a fin.</span></div></li>
+        <li><span class="tk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.8 5.3.8-3.8 3.7.9 5.3L12 14.8 7.2 16.6l.9-5.3L4.3 7.6l5.3-.8L12 2Z"/></svg></span><div><b>Evaluación posterior</b><span>Calificas cada atención para mejorar la red continuamente.</span></div></li>
+      </ul>
+
+      <div class="trust-quote">
+        <svg class="ruben-round" width="78" height="78" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="50" fill="#0A2E36"/><circle cx="50" cy="46" r="26" fill="#f0c19c"/><path d="M26 42c-2-20 12-30 24-30s26 10 24 30c-2-6-6-11-11-13 1 5-1 9-4 12-4-8-12-11-20-8-5 2-9 6-11 11-2-3-3-7-2-12-1 1-3 4-2 10Z" fill="#7c8c93"/><circle cx="42" cy="45" r="3" fill="#143038"/><circle cx="58" cy="45" r="3" fill="#143038"/><path d="M40 56c6 7 14 7 20 0" stroke="#b5623b" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M42 53c3 2 6 2 8 1 2 1 5 1 8-1-2 3-5 4-8 4s-6-1-8-4Z" fill="#7c8c93"/><path d="M24 100c0-20 12-30 26-30s26 10 26 30H24Z" fill="#12525E"/></svg>
+        <p>“Encontramos a la persona indicada para ayudarte, y nos quedamos contigo hasta que el trabajo esté bien hecho.”</p>
+        <div class="sig">— Rubén</div>
+        <p class="trust-disc">Nota: la garantía está sujeta al tipo de servicio realizado. No prometemos seguridad absoluta ni garantías que no puedan comprobarse; trabajamos para que cada visita sea confiable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section style="background:var(--surface-2)">
+  <div class="wrap center">
+    <span class="demo-flag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+      Contenido de muestra — se reemplazará por opiniones reales verificadas
+    </span>
+    <h2 style="margin-bottom:6px">Lo que buscamos que digan de Rubén</h2>
+    <p class="lead" style="margin:0 auto 34px">Estos ejemplos son ilustrativos. No representan experiencias reales todavía.</p>
+
+    <div class="tst-grid" style="text-align:left">
+      <div class="tst">
+        <span class="demo-tag">Muestra</span>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>“Se malogró el caño un domingo y en un rato ya tenía al gasfitero en casa. Me dijeron el precio antes de empezar. Todo claro.”</p>
+        <div class="who"><span class="av">MC</span><div><b>María C. (ejemplo)</b><span>Surco</span></div></div>
+      </div>
+      <div class="tst">
+        <span class="demo-tag">Muestra</span>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>“Coordiné todo por WhatsApp en minutos. El técnico llegó puntual y dejó el trabajo impecable. Volvería a llamar a Rubén.”</p>
+        <div class="who"><span class="av">JR</span><div><b>Jorge R. (ejemplo)</b><span>San Miguel</span></div></div>
+      </div>
+      <div class="tst">
+        <span class="demo-tag">Muestra</span>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <p>“Necesitaba enfermería a domicilio para mi mamá. Me dio tranquilidad que el personal estuviera acreditado.”</p>
+        <div class="who"><span class="av">LP</span><div><b>Lucía P. (ejemplo)</b><span>La Molina</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== URGENCY ========== -->
+<section class="urg">
+  <div class="wrap urg-card">
+    <span class="eyebrow" style="color:#fff">Urgencias</span>
+    <h2>¿Necesitas ayuda lo antes posible?</h2>
+    <p style="font-size:1.12rem; max-width:60ch; margin:0 auto 24px">Escríbenos por WhatsApp, indícanos tu distrito y cuéntanos qué ocurrió. Buscaremos un especialista disponible.</p>
+    <a class="btn btn-light btn-lg" id="waUrgent" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>
+      Contactar a Rubén ahora
+    </a>
+    <div class="urg-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+      <p>Los tiempos de atención dependen de la ubicación y disponibilidad. Ante una emergencia médica, fuga importante de gas, incendio o riesgo eléctrico, comunícate primero con los servicios de emergencia correspondientes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== WORK WITH US ========== -->
+<section id="trabaja">
+  <div class="wrap work-grid">
+    <div class="work-intro">
+      <svg class="ruben-round" width="92" height="92" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="50" fill="#12525E"/><circle cx="50" cy="46" r="26" fill="#f0c19c"/><path d="M26 42c-2-20 12-30 24-30s26 10 24 30c-2-6-6-11-11-13 1 5-1 9-4 12-4-8-12-11-20-8-5 2-9 6-11 11-2-3-3-7-2-12-1 1-3 4-2 10Z" fill="#6b7b82"/><circle cx="42" cy="45" r="3" fill="#143038"/><circle cx="58" cy="45" r="3" fill="#143038"/><path d="M40 56c6 7 14 7 20 0" stroke="#b5623b" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M42 53c3 2 6 2 8 1 2 1 5 1 8-1-2 3-5 4-8 4s-6-1-8-4Z" fill="#6b7b82"/><path d="M24 100c0-20 12-30 26-30s26 10 26 30H24Z" fill="#F07C1E"/></svg>
+      <span class="eyebrow">Trabaja con nosotros</span>
+      <h2>¿Eres bueno en tu oficio? Trabaja con Rubén.</h2>
+      <p class="lead">Forma parte de nuestra red de especialistas y recibe nuevas oportunidades de servicio.</p>
+      <ul class="work-perks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Más clientes cerca de tu zona</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Coordinación simple por WhatsApp</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Tú decides tu disponibilidad</li>
+      </ul>
+    </div>
+
+    <form class="form-card" id="joinForm" novalidate style="margin:0">
+      <div class="form-grid">
+        <div class="field">
+          <label for="j_name">Nombre completo <span class="req">*</span></label>
+          <input type="text" id="j_name" placeholder="Tu nombre y apellidos">
+          <span class="form-err">Ingresa tu nombre completo.</span>
+        </div>
+        <div class="field">
+          <label for="j_phone">Celular <span class="req">*</span></label>
+          <input type="tel" id="j_phone" inputmode="numeric" placeholder="999 999 999">
+          <span class="form-err">Ingresa un celular válido (9 dígitos).</span>
+        </div>
+        <div class="field">
+          <label for="j_trade">Oficio o especialidad <span class="req">*</span></label>
+          <input type="text" id="j_trade" placeholder="Ej. Gasfitero, electricista…">
+          <span class="form-err">Indica tu oficio.</span>
+        </div>
+        <div class="field">
+          <label for="j_years">Años de experiencia</label>
+          <input type="number" id="j_years" min="0" max="60" placeholder="Ej. 8">
+        </div>
+        <div class="field full">
+          <label for="j_zones">Distritos que atiende</label>
+          <input type="text" id="j_zones" placeholder="Ej. Surco, Miraflores, San Borja">
+        </div>
+        <div class="field">
+          <label for="j_avail">Disponibilidad</label>
+          <input type="text" id="j_avail" placeholder="Ej. Lun–Sáb, mañanas">
+        </div>
+        <div class="field">
+          <label for="j_docs">Documentos o acreditaciones</label>
+          <input type="text" id="j_docs" placeholder="Ej. DNI, certificados, colegiatura">
+        </div>
+        <div class="field full">
+          <label for="j_refs">Referencias</label>
+          <input type="text" id="j_refs" placeholder="Nombre y contacto de referencias">
+        </div>
+        <div class="field full">
+          <label>Fotografías de trabajos anteriores</label>
+          <label class="file-drop" for="j_photos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+            <div>Toca para elegir fotos</div>
+            <small>Las adjuntarás en el chat de WhatsApp al enviar.</small>
+          </label>
+          <input type="file" id="j_photos" accept="image/*" multiple hidden>
+          <div class="file-names" id="jFileNames"></div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-accent btn-lg btn-block" style="margin-top:8px">Quiero ser parte de Rubén</button>
+      <p class="form-note">Se abrirá WhatsApp con tu postulación lista para enviar.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section style="background:var(--surface-2)" id="faq">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq-list" id="faqList"><!-- filled by JS --></div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site" id="contacto">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="14" fill="#F07C1E"/><path d="M24 10c-6.2 0-11 4.6-11 11 0 4.6 2.7 7.9 6 10v3.2c0 1 .8 1.8 1.8 1.8h6.4c1 0 1.8-.8 1.8-1.8V31c3.3-2.1 6-5.4 6-10 0-6.4-4.8-11-11-11Z" fill="#fff"/><circle cx="20" cy="21" r="1.8" fill="#F07C1E"/><circle cx="28" cy="21" r="1.8" fill="#F07C1E"/><path d="M20 26c1.2 1.4 6.8 1.4 8 0" stroke="#F07C1E" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="name">Rubén</span>
+        </div>
+        <p>Servicios confiables para tu hogar, cuando los necesites. Rubén conoce a alguien que puede ayudarte.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="Facebook de Rubén (editable)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
+          <a href="#" aria-label="Instagram de Rubén (editable)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="TikTok de Rubén (editable)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 4c.5 2.5 2 4 4.5 4.3v3c-1.7 0-3.3-.5-4.5-1.4V15a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V4h3Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <div class="foot-phone"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>999 922 688</div>
+        <div class="foot-phone"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>994 997 700</div>
+        <ul style="margin-top:12px">
+          <li><a href="#" id="footWa1" target="_blank" rel="noopener">WhatsApp principal</a></li>
+          <li><a href="#" id="footWa2" target="_blank" rel="noopener">WhatsApp alternativo</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Todos los servicios</a></li>
+          <li><a href="#solicitar">Pedir un servicio</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#trabaja">Trabaja con Rubén</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#terminos" id="lnkTerms">Términos y condiciones</a></li>
+          <li><a href="#privacidad" id="lnkPrivacy">Política de privacidad</a></li>
+          <li><a href="#reclamaciones" id="lnkBook">Libro de reclamaciones</a></li>
+          <li><a href="#confianza">Confianza y seguridad</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="foot-disc">Rubén conecta a los usuarios con especialistas independientes. La disponibilidad, cobertura y condiciones pueden variar según el servicio.</p>
+
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Rubén · Servicios a domicilio en Lima</span>
+      <span>“¿Necesitas ayuda? Llama a Rubén.”</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== FLOATING BUTTONS ========== -->
+<div class="float">
+  <a class="btn btn-accent fab-service" href="#solicitar">Pedir servicio</a>
+  <a class="fab-wa" id="fabWa" href="#" target="_blank" rel="noopener" aria-label="Escribir a Rubén por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.36-.5.05-1.14.24-3.7-.78-3.11-1.23-5.08-4.4-5.23-4.6-.15-.2-1.25-1.66-1.25-3.17s.79-2.25 1.07-2.56c.28-.31.61-.39.82-.39.2 0 .41 0 .59.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.2.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.45.29.15.46.13.63-.08.17-.2.72-.84.91-1.13.19-.29.39-.24.65-.15.27.1 1.71.81 2 .95.29.15.49.22.56.34.07.12.07.71-.17 1.39Z"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var WA_MAIN = "51999922688";
+  var WA_ALT  = "51994997700";
+  var GENERIC = "Hola, Rubén. Necesito solicitar un servicio. El servicio que requiero es: ____. Mi distrito es: ____. Quisiera programarlo para: ____. El problema o trabajo consiste en: ____.";
+
+  function waURL(number, text){ return "https://wa.me/" + number + "?text=" + encodeURIComponent(text); }
+  function openWA(number, text){ window.open(waURL(number, text), "_blank", "noopener"); }
+
+  /* ---- ICONS ---- */
+  var I = {
+    tool:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.2-.4-.4-2.2 2.6-2.6Z"/>',
+    bolt:'<path d="M13 2L4 14h6l-1 8 9-12h-6l1-8Z"/>',
+    fridge:'<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 9h12M9 5v2M9 12v3"/>',
+    saw:'<path d="M3 17h14l4-4-3-3-15 6v1Z"/><path d="M3 17v3h3"/>',
+    lock:'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+    broom:'<path d="M4 20l6-6M14 4l6 6M13 5l6 6-3 3-6-6zM10 12l-5 5c-1 1-1 3 0 3h4l3-5"/>',
+    build:'<path d="M3 21h18M6 21V9l6-4 6 4v12M9 21v-6h6v6"/>',
+    nurse:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M12 5v3M10.5 6.5h3"/>',
+    paint:'<rect x="4" y="3" width="16" height="7" rx="2"/><path d="M4 7h16M12 10v4M10 14h4v6h-4z"/>',
+    brick:'<rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 12h18M9 5v7M15 12v7"/>',
+    tv:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
+    sofa:'<path d="M4 11V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3M3 11a2 2 0 0 1 2 2v3h14v-3a2 2 0 0 1 2-2M5 19v2M19 19v2"/>',
+    leaf:'<path d="M11 20A7 7 0 0 1 4 13c0-6 8-9 16-9 0 8-3 16-9 16ZM4 20c3-5 6-8 10-10"/>',
+    bug:'<path d="M8 8a4 4 0 0 1 8 0M6 13h12M12 8v11M5 10l3 1M5 16l3-1M19 10l-3 1M19 16l-3-1M9 4l1 2M15 4l-1 2"/>',
+    air:'<path d="M3 8h15a3 3 0 1 0-3-3M3 13h11a3 3 0 1 1-3 3M3 17h8"/>',
+    tech:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><circle cx="12" cy="10" r="2"/>',
+    cam:'<path d="M2 8l14-2 6 4v8l-6-2v-2H4a2 2 0 0 1-2-2V8Z"/><circle cx="9" cy="12" r="2"/>',
+    truck:'<path d="M2 6h11v9H2zM13 9h4l3 3v3h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',
+    heart:'<path d="M12 21s-8-4.5-8-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-8 10-8 10Z"/><path d="M9 12h2l1-2 1 4 1-2h2"/>',
+    syringe:'<path d="M18 2l4 4M16 4l4 4M17 7L7 17l-4 1 1-4L14 4z"/><path d="M9 13l2 2"/>',
+    more:'<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>'
+  };
+  function svg(p){ return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">'+p+'</svg>'; }
+
+  /* ---- SERVICES DATA ---- */
+  var SERVICES = [
+    {n:"Gasfitería", i:I.tool},
+    {n:"Electricidad", i:I.bolt},
+    {n:"Reparación y mantenimiento de electrodomésticos", i:I.fridge},
+    {n:"Carpintería", i:I.saw},
+    {n:"Cerrajería", i:I.lock},
+    {n:"Pintura", i:I.paint},
+    {n:"Albañilería y reparaciones menores", i:I.brick},
+    {n:"Instalación de televisores, repisas y cortinas", i:I.tv},
+    {n:"Armado de muebles", i:I.sofa},
+    {n:"Limpieza del hogar", i:I.broom},
+    {n:"Limpieza profunda de muebles y colchones", i:I.sofa},
+    {n:"Jardinería", i:I.leaf},
+    {n:"Fumigación y control de plagas", i:I.bug},
+    {n:"Aire acondicionado y ventilación", i:I.air},
+    {n:"Soporte tecnológico y configuración de equipos", i:I.tech},
+    {n:"Instalación de cámaras de seguridad", i:I.cam},
+    {n:"Mudanzas y transporte de objetos", i:I.truck},
+    {n:"Cuidado y asistencia para adultos mayores", i:I.heart, health:true},
+    {n:"Enfermería a domicilio", i:I.nurse, health:true},
+    {n:"Aplicación de inyecciones por personal de salud acreditado", i:I.syringe, health:true},
+    {n:"Otros servicios a solicitud", i:I.more}
+  ];
+
+  var FEATURED = [
+    {n:"Gasfitería", d:"Fugas, caños, desagües", i:I.tool},
+    {n:"Electricidad", d:"Instalaciones y fallas", i:I.bolt},
+    {n:"Electrodomésticos", d:"Reparación y mantenimiento", i:I.fridge, match:"Reparación y mantenimiento de electrodomésticos"},
+    {n:"Carpintería", d:"Muebles y reparaciones", i:I.saw},
+    {n:"Cerrajería", d:"Cerraduras y llaves", i:I.lock},
+    {n:"Limpieza", d:"Del hogar y profunda", i:I.broom, match:"Limpieza del hogar"},
+    {n:"Armado e instalaciones", d:"TV, repisas, muebles", i:I.tv, match:"Instalación de televisores, repisas y cortinas"},
+    {n:"Enfermería a domicilio", d:"Personal acreditado", i:I.nurse, health:true, match:"Enfermería a domicilio"}
+  ];
+
+  var FAQS = [
+    {q:"¿Cómo solicito un servicio?", a:"Elige el servicio, cuéntanos el problema y tu ubicación desde el formulario o el botón de WhatsApp. Coordinamos la visita contigo."},
+    {q:"¿En qué zonas atienden?", a:"Trabajamos en Lima. La cobertura puede variar según el distrito y la disponibilidad de especialistas; indícanos tu distrito y te confirmamos."},
+    {q:"¿Cómo se determina el precio?", a:"El especialista evalúa el trabajo y te informa un precio estimado antes de empezar. No se inicia el servicio sin tu confirmación."},
+    {q:"¿Puedo enviar fotografías del problema?", a:"Sí. Puedes adjuntar fotos directamente en la conversación de WhatsApp para que el especialista entienda mejor el trabajo."},
+    {q:"¿Cómo se seleccionan los especialistas?", a:"Verificamos su identidad, validamos experiencia y referencias, y para servicios de salud requerimos personal acreditado cuando corresponde."},
+    {q:"¿Qué ocurre si el trabajo requiere materiales adicionales?", a:"El especialista te informará qué materiales se necesitan y su costo antes de continuar, para que decidas con la información completa."},
+    {q:"¿Los servicios tienen garantía?", a:"La garantía está sujeta al tipo de servicio realizado. Te indicaremos las condiciones aplicables según el trabajo."},
+    {q:"¿Puedo programar un servicio para otro día?", a:"Claro. Al solicitar, elige la fecha y franja horaria que prefieras, y coordinamos la visita según disponibilidad."},
+    {q:"¿Cómo puedo formar parte de la red de Rubén?", a:"Completa el formulario de la sección “Trabaja con Rubén”. Revisaremos tu oficio, experiencia y referencias para sumarte a la red."},
+    {q:"¿Qué servicios de salud pueden solicitarse a domicilio?", a:"Enfermería a domicilio, cuidado de adultos mayores y aplicación de inyecciones por personal acreditado. La aplicación de medicamentos requiere indicación médica cuando corresponda. Rubén no sustituye un servicio de emergencia."}
+  ];
+
+  /* ---- BUILD SELECTS ---- */
+  var heroSel = document.getElementById("heroService");
+  var formSel = document.getElementById("f_service");
+  SERVICES.forEach(function(s){
+    var o1 = document.createElement("option"); o1.value = s.n; o1.textContent = s.n; heroSel.appendChild(o1);
+    var o2 = document.createElement("option"); o2.value = s.n; o2.textContent = s.n; formSel.appendChild(o2);
+  });
+
+  /* ---- FEATURED CARDS ---- */
+  var catGrid = document.getElementById("catGrid");
+  FEATURED.forEach(function(c){
+    var b = document.createElement("button");
+    b.className = "cat" + (c.health ? " health" : "");
+    b.type = "button";
+    b.setAttribute("data-service", c.match || c.n);
+    b.innerHTML = '<span class="ico">'+svg(c.i)+'</span>' +
+                  '<b>'+c.n+'</b><span>'+c.d+'</span>' +
+                  '<span class="go">Solicitar '+svg('<path d="M5 12h14M13 6l6 6-6 6"/>')+'</span>';
+    b.addEventListener("click", function(){ pickService(this.getAttribute("data-service")); });
+    catGrid.appendChild(b);
+  });
+
+  /* ---- FULL SERVICE LIST ---- */
+  var servList = document.getElementById("servList");
+  SERVICES.forEach(function(s){
+    var b = document.createElement("button");
+    b.className = "serv-item" + (s.health ? " health" : "");
+    b.type = "button";
+    b.setAttribute("data-service", s.n);
+    b.innerHTML = '<span class="d">'+svg(s.i)+'</span><b>'+s.n+'</b>';
+    b.addEventListener("click", function(){ pickService(this.getAttribute("data-service")); });
+    servList.appendChild(b);
+  });
+
+  /* ---- FAQ ---- */
+  var faqList = document.getElementById("faqList");
+  FAQS.forEach(function(f){
+    var d = document.createElement("details");
+    d.className = "faq";
+    d.innerHTML = '<summary>'+f.q+'<span class="plus">'+svg('<path d="M12 5v14M5 12h14"/>')+'</span></summary><div class="ans"><p>'+f.a+'</p></div>';
+    faqList.appendChild(d);
+  });
+
+  /* ---- pick a service: preselect in form + scroll ---- */
+  function pickService(name){
+    formSel.value = name;
+    heroSel.value = name;
+    var el = document.getElementById("solicitar");
+    el.scrollIntoView({behavior:"smooth", block:"start"});
+    var wrap = formSel.closest(".field");
+    wrap.classList.remove("invalid");
+    setTimeout(function(){ formSel.focus({preventScroll:true}); }, 400);
+  }
+
+  /* ---- generic WA links ---- */
+  function setWA(id, number, text){ var e=document.getElementById(id); if(e) e.href = waURL(number, text); }
+  setWA("waHeader", WA_MAIN, GENERIC);
+  setWA("waHero", WA_MAIN, GENERIC);
+  setWA("waHow", WA_MAIN, GENERIC);
+  setWA("waUrgent", WA_MAIN, "Hola, Rubén. Es urgente. Mi distrito es: ____. Lo que ocurrió es: ____. ¿Tienen un especialista disponible lo antes posible?");
+  setWA("fabWa", WA_MAIN, GENERIC);
+  setWA("footWa1", WA_MAIN, GENERIC);
+  setWA("footWa2", WA_ALT, GENERIC);
+
+  /* ---- hero finder ---- */
+  document.getElementById("heroFindBtn").addEventListener("click", function(){
+    var v = heroSel.value;
+    if(!v){ heroSel.focus(); return; }
+    openWA(WA_MAIN, "Hola, Rubén. Quiero solicitar el servicio de: " + v + ". Mi distrito es: ____. Quisiera programarlo para: ____. El trabajo consiste en: ____.");
+  });
+
+  /* ---- file inputs ---- */
+  function wireFiles(inputId, outId){
+    var inp = document.getElementById(inputId), out = document.getElementById(outId);
+    inp.addEventListener("change", function(){
+      if(inp.files.length){
+        out.textContent = "📷 " + inp.files.length + " foto(s) seleccionada(s) — recuerda adjuntarlas en el chat.";
+      } else { out.textContent = ""; }
+    });
+  }
+  wireFiles("f_files","fileNames");
+  wireFiles("j_photos","jFileNames");
+
+  /* ---- validation helper ---- */
+  function invalid(el, cond){
+    var f = el.closest(".field");
+    if(cond){ f.classList.add("invalid"); return true; }
+    f.classList.remove("invalid"); return false;
+  }
+  function validPhone(v){ return /^\d{9}$/.test(v.replace(/\D/g,"")); }
+
+  /* ---- REQUEST FORM submit ---- */
+  document.getElementById("requestForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = document.getElementById("f_name");
+    var phone = document.getElementById("f_phone");
+    var district = document.getElementById("f_district");
+    var address = document.getElementById("f_address");
+    var service = document.getElementById("f_service");
+    var desc = document.getElementById("f_desc");
+    var date = document.getElementById("f_date");
+    var slot = document.getElementById("f_slot");
+    var terms = document.getElementById("f_terms");
+    var contact = (document.querySelector('input[name="contact"]:checked')||{}).value || "WhatsApp";
+    var urgency = (document.querySelector('input[name="urgency"]:checked')||{}).value || "";
+    var files = document.getElementById("f_files");
+
+    var bad = false;
+    bad = invalid(name, !name.value.trim()) || bad;
+    bad = invalid(phone, !validPhone(phone.value)) || bad;
+    bad = invalid(district, !district.value.trim()) || bad;
+    bad = invalid(service, !service.value) || bad;
+    bad = invalid(desc, !desc.value.trim()) || bad;
+    bad = invalid(terms, !terms.checked) || bad;
+    if(bad){ this.querySelector(".invalid input,.invalid select,.invalid textarea").focus(); return; }
+
+    var lines = [
+      "Hola, Rubén. Quiero solicitar un servicio 👇",
+      "",
+      "• Nombre: " + name.value.trim(),
+      "• Celular: " + phone.value.trim(),
+      "• Distrito: " + district.value.trim()
+    ];
+    if(address.value.trim()) lines.push("• Dirección/referencia: " + address.value.trim());
+    lines.push("• Servicio: " + service.value);
+    lines.push("• Descripción: " + desc.value.trim());
+    if(date.value) lines.push("• Fecha preferida: " + date.value);
+    if(slot.value) lines.push("• Franja horaria: " + slot.value);
+    if(urgency) lines.push("• Urgencia: " + urgency);
+    lines.push("• Contacto preferido: " + contact);
+    if(files.files.length) lines.push("• Adjuntaré " + files.files.length + " foto(s) en este chat.");
+    lines.push("");
+    lines.push("Quedo atento(a) para coordinar. ¡Gracias!");
+
+    openWA(WA_MAIN, lines.join("\n"));
+  });
+
+  /* ---- JOIN FORM submit ---- */
+  document.getElementById("joinForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = document.getElementById("j_name");
+    var phone = document.getElementById("j_phone");
+    var trade = document.getElementById("j_trade");
+    var years = document.getElementById("j_years");
+    var zones = document.getElementById("j_zones");
+    var avail = document.getElementById("j_avail");
+    var docs = document.getElementById("j_docs");
+    var refs = document.getElementById("j_refs");
+    var photos = document.getElementById("j_photos");
+
+    var bad = false;
+    bad = invalid(name, !name.value.trim()) || bad;
+    bad = invalid(phone, !validPhone(phone.value)) || bad;
+    bad = invalid(trade, !trade.value.trim()) || bad;
+    if(bad){ this.querySelector(".invalid input").focus(); return; }
+
+    var lines = [
+      "Hola, Rubén. Quiero ser parte de tu red de especialistas 👷",
+      "",
+      "• Nombre completo: " + name.value.trim(),
+      "• Celular: " + phone.value.trim(),
+      "• Oficio/especialidad: " + trade.value.trim()
+    ];
+    if(years.value) lines.push("• Años de experiencia: " + years.value);
+    if(zones.value.trim()) lines.push("• Distritos que atiende: " + zones.value.trim());
+    if(avail.value.trim()) lines.push("• Disponibilidad: " + avail.value.trim());
+    if(docs.value.trim()) lines.push("• Documentos/acreditaciones: " + docs.value.trim());
+    if(refs.value.trim()) lines.push("• Referencias: " + refs.value.trim());
+    if(photos.files.length) lines.push("• Adjuntaré " + photos.files.length + " foto(s) de trabajos anteriores en este chat.");
+    lines.push("");
+    lines.push("Quedo atento(a). ¡Gracias!");
+
+    openWA(WA_ALT, lines.join("\n"));
+  });
+
+  /* ---- toggle all services ---- */
+  var toggle = document.getElementById("toggleAll");
+  var panel = document.getElementById("allServices");
+  toggle.addEventListener("click", function(){
+    var open = panel.classList.toggle("open");
+    panel.setAttribute("aria-hidden", open ? "false" : "true");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.textContent = open ? "Ocultar servicios" : "Ver todos los servicios";
+    if(open){ setTimeout(function(){ panel.scrollIntoView({behavior:"smooth", block:"nearest"}); }, 60); }
+  });
+
+  /* ---- mobile menu ---- */
+  var burger = document.getElementById("burger");
+  var mpanel = document.getElementById("mobilePanel");
+  function closeMenu(){ mpanel.classList.remove("open"); burger.setAttribute("aria-expanded","false"); }
+  burger.addEventListener("click", function(){ mpanel.classList.add("open"); burger.setAttribute("aria-expanded","true"); });
+  document.getElementById("mClose").addEventListener("click", closeMenu);
+  mpanel.addEventListener("click", function(e){ if(e.target === mpanel) closeMenu(); });
+  mpanel.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", closeMenu); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeMenu(); });
+
+  /* ---- legal placeholders ---- */
+  function placeholder(id, msg){
+    var e = document.getElementById(id);
+    if(e) e.addEventListener("click", function(ev){ ev.preventDefault(); alert(msg); });
+  }
+  placeholder("lnkTerms", "Términos y condiciones: sección por completar con el contenido legal de Rubén.");
+  placeholder("lnkPrivacy", "Política de privacidad: sección por completar con el aviso de tratamiento de datos personales (Ley N.° 29733).");
+  placeholder("lnkBook", "Libro de Reclamaciones: espacio reservado para el Libro de Reclamaciones virtual, obligatorio en Perú. Por configurar.");
+
+  /* ---- year ---- */
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
